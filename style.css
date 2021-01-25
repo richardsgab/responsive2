@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: large;
+     
+}
+
+section{
+    justify-self: center;
+    padding: 20px;    
+    
+}
+
+#large {
+    display: none;
+    background-color: blueviolet;
+}
+#medium {
+    display: none;
+    background-color: rgb(79, 76, 240);
+}
+#small {
+    background-color: rgb(196, 47, 209);
+}
+
+
+  @media only screen and (min-width: 600px) {
+    #medium {display: block;}
+    #small {display: none;}
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #large {display: block;}
+    #medium {display: none;}
+   
+  }
